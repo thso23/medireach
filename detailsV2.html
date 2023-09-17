@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>
+        Medireach 
+    </title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>protfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form div {
+            margin-bottom: 10px;
+        }
+        /* Updated styles for the box */
+        .form-box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            /* Made the box wider */
+            width: 80%;
+            max-width: 800px; /* Optional, prevents the box from becoming too wide on large screens */
+            margin-left: auto;
+            margin-right: auto;
+
+            /* New styles for a prettier look */
+            border-radius: 10px; /* Rounded corners */
+            background-color: #f8f8f8; /* Light grey background */
+        }
+        /* New styles for the disease input field */
+        .disease-input {
+            width: 70%;
+            padding: 5px;
+            font-size: inherit; /* Makes the text size close to the text size of 'Cause:' */
+        }
+        /* New styles for the cause and disease input field */
+        .cause-container {
+            display: flex; /* Aligns the cause and disease input field horizontally */
+            align-items: center; /* Vertically centers the cause and disease input field */
+            gap: 10px; /* Adds some space between the cause and disease input field */
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+            <div class="container">
+                <div class="navbar">
+                        <div class="logocintainer">
+                            <img src="logo.jpg" class="logo">
+                        </div>
+
+                        <div class="nav-items">
+                            <div><a href="hospital.html">Hospitals</a></div>
+                            <div><a href="about.html">About</a></div>
+                            <div><a href="#contact">Contact Me</a></div>
+                        </div>
+
+
+
+                </div>
+            </div>
+            <div class="hero-section">
+                
+                <!-- Added a box around the form -->
+                <div class="hero-section-left form-box">
+
+                <!-- Wrapped 'Cause:' and the disease input field in a container -->
+                <div class="cause-container">
+                    <!-- Replaced the text with 'Cause:' -->
+                    <div class="hero-section-heading">Cause:</div>
+
+                    <!-- Added a text input field for the disease right next to 'Cause:' -->
+                    <input type="text" name="disease" class="disease-input">
+                </div>
+
+                <form action="/submit_user_info" method="post">
+                    <div>First name:<br>
+                    <input type="text" name="firstname"></div>
+
+                    <div>Last name:<br>
+                    <input type="text" name="lastname"></div>
+
+                    <div>Phone number:<br>
+                    <input type="tel" name="phone"></div>
+
+
+                    <div>Gender:<br>
+                    <input type="radio" name="gender" value="male"> Male<br>
+                    <input type="radio" name="gender" value="female"> Female</div>
+
+                    <!-- Please note that this is a text input and does not validate the input as a pincode -->
+                    <!-- You might want to add validation depending on your needs -->
+                    <!-- Also, remember to handle the user's personal data with care and respect their privacy -->
+                    <div>Pincode:<br>
+                    <input type="text" name="pincode"></div>
+
+                </form>
+
+                <!-- Please replace '/submit_user_info' with your actual form processing URL -->
+                <!-- Also, please ensure that clicking this button will not refresh the page if you have any unsaved changes -->
+                <!-- You might need to prevent the default action of the button and use AJAX to submit the form -->
+                <!-- This is just a basic example and might not work in all cases -->
+                <!-- Always test your code thoroughly before deploying it -->
+                <button class="btn-check" id="btn" onclick='document.forms[0].submit();'>Book now</button>
+
+            </div>
+
+            ...
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>
+        Medireach 
+    </title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>protfolio Website</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+/* Style the/* Style the container */
+.username-box {
+    width: 300px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Style the labels */
+.username-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style the input fields */
+.username-box input[type="text"],
+.username-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the submit button */
+.username-box input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Change button color on hover */
+.username-box input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <div class="navbar">
+                <div class="logocintainer">
+                    <a href="index.html">
+                        <img src="logo.jpg" class="logo">
+                    </a>
+                </div>
+
+                <div class="nav-items">
+                    <div><a href="hospital.html">Hospitals</a></div>
+                    <div><a href="about.html">About</a></div>
+                    <div><a href="#contact">Contact Me</a></div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Professional Box for Details -->
+        <div class="username-box">
+            <form action="/submit-details" method="post">
+                <label for="hospital-id">Phone No:</label><br>
+                <input type="text" id="user-id" name="hospital-id"><br>
+                <label for="password">OTP:</label><br>
+                <input type="password" id="password" name="password"><br>
+                <input type="submit" value="Sign in">
+            </form> 
+        </div>
+
+    </div>
+</body>
+</html>
